@@ -1,0 +1,53 @@
+<!doctype html><html><head> 
+  <title> Quotes generator </title> 
+  <style>
+    body{
+      background-color:brown;
+    }  
+    #box{
+      border:60px;
+      margin:0 auto;
+    text-align:center;
+    background-color:teal;
+    Color:White;
+    Width:650px;
+    Height:500px;
+    }
+    #pr{
+    margin:50px;
+    font-size:20px;
+    text-align:center;
+    background-color:coral;
+    Color:White;
+    Width:150px;
+    Height:60px;
+    }
+    #out{   
+      margin:0 auto;
+    text-align:center;
+    Color:White;
+    Width:400px;
+    Height:60px; 
+    font-size:25px;
+    }
+  </style> 
+ </head> 
+ <body> 
+  <div id="box"> 
+   <button id="pr" onclick="quote()"> Press here for quotes </button> 
+   <div id="out">
+     Ready to get motivated😄 
+   </div> 
+  </div> 
+  <script>
+   let ot=document.getElementById("out");
+   let newquotes=["As you think, so shall you become","Showing off is the fool's idea of glory","Knowledge will give you power, but character respect","Having no limitation as limitation","Adapt what is useful, reject what is useless, and add what is specifically your own","To hell with circumstances; I create opportunities","Be water my friend be formless, be shapeless.","If you love life, don't waste time, for time is what life is made up of","If you spend too much time thinking about a thing, you'll never get it done","Mistakes are always forgivable, if one has the courage to admit them"];
+   function quote()
+   {
+   let quotes=newquotes[Math.
+   floor(Math.random()*newquotes.length)];
+   ot.innerHTML=quotes;
+   }
+</script> 
+ 
+</body></html>
